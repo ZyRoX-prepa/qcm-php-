@@ -1,0 +1,709 @@
+QCM PHP - 100 questions (4 parties)
+
+Partie 1 — Introduction web & syntaxe PHP (Q1–Q25)
+
+1) Le HTML est principalement :
+A) Un langage de programmation
+B) Un langage de balisage
+C) Un SGBD
+D) Un compilateur
+Réponse : B
+
+2) Un site dynamique utilise généralement :
+A) HTML uniquement
+B) CSS uniquement
+C) HTML + CSS + langage serveur (ex: PHP)
+D) FTP uniquement
+Réponse : C
+
+3) PHP s’exécute principalement :
+A) Côté client
+B) Côté serveur
+C) Dans le routeur
+D) Dans le BIOS
+Réponse : B
+
+4) PHP signifie aujourd’hui :
+A) Personal Home Program
+B) PHP Hypertext Preprocessor
+C) Program Hyper Page
+D) Public Hosting Protocol
+Réponse : B
+
+5) Le rôle principal du navigateur est :
+A) Compiler le PHP
+B) Exécuter MySQL
+C) Envoyer des requêtes HTTP et afficher la réponse
+D) Héberger la base de données
+Réponse : C
+
+6) Pour afficher du texte en PHP, on utilise souvent :
+A) printcss
+B) echo
+C) scanf
+D) include_once_db
+Réponse : B
+
+7) Une variable PHP commence par :
+A) #
+B) &
+C) $
+D) @
+Réponse : C
+
+8) En PHP, les noms de variables sont :
+A) Insensibles à la casse
+B) Sensibles à la casse
+C) Toujours en majuscules
+D) Toujours numériques
+Réponse : B
+
+9) Le bon délimiteur d’un script PHP est :
+A) <script php> ... </script>
+B) <?php ... ?>
+C) <php> ... </php>
+D) <%php ... %>
+Réponse : B
+
+10) Une constante se déclare typiquement avec :
+A) var()
+B) let()
+C) define()
+D) const_set() uniquement
+Réponse : C
+
+11) L’instruction conditionnelle simple en PHP est :
+A) when
+B) if
+C) choose
+D) test
+Réponse : B
+
+12) Le bloc alternatif de if est :
+A) else
+B) elseifonly
+C) otherwise
+D) defaultif
+Réponse : A
+
+13) Pour des choix multiples, on utilise souvent :
+A) for
+B) while
+C) switch
+D) foreach uniquement
+Réponse : C
+
+14) Une boucle d’itération connue en PHP :
+A) repeat-until uniquement
+B) for
+C) loop-end
+D) iterate
+Réponse : B
+
+15) La boucle adaptée aux tableaux est souvent :
+A) foreach
+B) if
+C) switch
+D) define
+Réponse : A
+
+16) Un tableau associatif utilise :
+A) Index uniquement numériques
+B) Clés/valeurs
+C) Pointeurs mémoire bruts
+D) Classes obligatoires
+Réponse : B
+
+17) Pour obtenir le nombre d’éléments d’un tableau :
+A) len()
+B) sizeof()/count()
+C) arraylen()
+D) total()
+Réponse : B
+
+18) Une fonction en PHP se déclare avec :
+A) function
+B) def
+C) fnc
+D) proc
+Réponse : A
+
+19) Une fonction peut :
+A) Toujours retourner plusieurs classes
+B) Retourner une valeur avec return
+C) Ne jamais prendre d’arguments
+D) Exister seulement dans une classe
+Réponse : B
+
+20) $_SERVER est :
+A) Une base SQL
+B) Un tableau superglobal
+C) Un type primitif
+D) Une extension CSS
+Réponse : B
+
+21) Le code PHP est transformé côté serveur en :
+A) Bytecode Java
+B) HTML (entre autres) envoyé au client
+C) Script bash
+D) SQL uniquement
+Réponse : B
+
+22) Le couple front-end/back-end correct est :
+A) HTML/CSS (front) ; PHP (back)
+B) PHP (front) ; HTML (back)
+C) MySQL (front) ; CSS (back)
+D) Apache (front) ; JS (back)
+Réponse : A
+
+23) Une bonne pratique de base est :
+A) Mélanger tout le code sans structure
+B) Organiser le code en blocs/fonctions
+C) Supprimer les conditions
+D) Éviter les variables
+Réponse : B
+
+24) La communication web standard suit :
+A) FTP request/response
+B) HTTP request/response
+C) SMTP request/response
+D) SSH request/response
+Réponse : B
+
+25) print et echo servent surtout à :
+A) Lire un fichier
+B) Exécuter SQL
+C) Afficher du contenu
+D) Créer une classe
+Réponse : C
+
+Partie 2 — Fichiers, formulaires, requêtes HTTP (Q26–Q50)
+
+26) La fonction d’ouverture de fichier est :
+A) openfile()
+B) fopen()
+C) fileopen()
+D) startfile()
+Réponse : B
+
+27) Pour fermer un fichier ouvert :
+A) close()
+B) endfile()
+C) fclose()
+D) fstop()
+Réponse : C
+
+28) feof($fp) permet de :
+A) Écrire en fin de fichier
+B) Tester la fin de fichier
+C) Fermer le fichier
+D) Supprimer le fichier
+Réponse : B
+
+29) fgetc($fp) lit :
+A) Une ligne
+B) Un bloc JSON
+C) Un caractère
+D) Un tableau
+Réponse : C
+
+30) fgets($fp, $length) lit généralement :
+A) Une ligne
+B) Un octet
+C) Un dossier
+D) Un formulaire
+Réponse : A
+
+31) fseek($fp, p) sert à :
+A) Compresser le fichier
+B) Changer la position du pointeur
+C) Changer les permissions
+D) Renommer le fichier
+Réponse : B
+
+32) fputs($fp, $str) sert à :
+A) Lire une chaîne
+B) Écrire une chaîne
+C) Supprimer une chaîne
+D) Créer un dossier
+Réponse : B
+
+33) file_exists($f) vérifie :
+A) Le type MIME
+B) L’existence d’un fichier
+C) Le propriétaire du serveur
+D) La validité du HTML
+Réponse : B
+
+34) filesize($f) retourne :
+A) Le nom du fichier
+B) La taille du fichier
+C) Le contenu total en tableau
+D) Le chemin absolu
+Réponse : B
+
+35) filetype($f) retourne :
+A) Le type de fichier
+B) Le protocole HTTP
+C) La date de création
+D) Le propriétaire SQL
+Réponse : A
+
+36) copy($source, $dest) sert à :
+A) Déplacer le curseur
+B) Copier un fichier
+C) Changer l’encodage
+D) Vérifier la fin
+Réponse : B
+
+37) rename($old, $new) sert à :
+A) Lire un fichier
+B) Renommer un fichier
+C) Exécuter un script
+D) Ouvrir une URL
+Réponse : B
+
+38) unlink($f) sert à :
+A) Supprimer un fichier
+B) Ouvrir un fichier
+C) Copier un fichier
+D) Créer un fichier
+Réponse : A
+
+39) La méthode HTTP la plus utilisée pour envoyer les données de formulaire de manière plus discrète est :
+A) GET
+B) POST
+C) PUT
+D) TRACE
+Réponse : B
+
+40) En PHP, les données POST se récupèrent via :
+A) $_GET
+B) $_SERVER
+C) $_POST
+D) $_FILESYSTEM
+Réponse : C
+
+41) En HTML, un formulaire se crée avec la balise :
+A) <input>
+B) <form>
+C) <request>
+D) <fieldset-only>
+Réponse : B
+
+42) L’attribut action d’un formulaire indique :
+A) La couleur du formulaire
+B) Le script cible
+C) Le type d’input
+D) Le protocole SQL
+Réponse : B
+
+43) L’attribut method d’un formulaire indique :
+A) Le charset
+B) GET ou POST
+C) Le nom du bouton
+D) La session PHP
+Réponse : B
+
+44) Un <input type="radio"> permet en général :
+A) Plusieurs choix simultanés
+B) Un seul choix dans un groupe
+C) Saisie de mot de passe
+D) Upload de fichier
+Réponse : B
+
+45) Un <input type="checkbox"> permet :
+A) Un seul choix strict
+B) Aucun choix
+C) Plusieurs choix possibles
+D) Une requête SQL
+Réponse : C
+
+46) Pour envoyer un formulaire, on utilise souvent :
+A) <input type="submit">
+B) <input type="hidden">
+C) <input type="range">
+D) <input type="color">
+Réponse : A
+
+47) Le traitement serveur des formulaires doit inclure :
+A) Validation des données
+B) Suppression automatique des erreurs
+C) Désactivation des champs
+D) Compilation Java
+Réponse : A
+
+48) Structure simplifiée HTTP :
+A) URL + DNS
+B) Entête + Corps
+C) Front + Back
+D) Form + SQL
+Réponse : B
+
+49) En lecture de fichier caractère par caractère, on combine souvent :
+A) fgetc + while(!feof)
+B) fgets + switch
+C) fopen + class
+D) define + return
+Réponse : A
+
+50) L’ordre standard d’utilisation d’un fichier est :
+A) Fermer → ouvrir → lire
+B) Ouvrir → lire/écrire → fermer
+C) Lire → ouvrir → fermer
+D) Écrire sans ouvrir
+Réponse : B
+
+Partie 3 — Programmation orientée objet en PHP (Q51–Q75)
+
+51) La POO vise notamment :
+A) Diminuer toute modularité
+B) Améliorer modularité et réutilisabilité
+C) Supprimer les classes
+D) Remplacer totalement les fonctions
+Réponse : B
+
+52) Une classe est :
+A) Une instance
+B) Un modèle/type
+C) Une méthode
+D) Un fichier CSS
+Réponse : B
+
+53) Un objet est :
+A) Une fonction globale
+B) Une instance de classe
+C) Un tableau associatif obligatoire
+D) Un namespace
+Réponse : B
+
+54) Le mot-clé pour déclarer une classe :
+A) object
+B) class
+C) defineclass
+D) newclass
+Réponse : B
+
+55) Le mot-clé pour créer un objet :
+A) create
+B) make
+C) new
+D) init
+Réponse : C
+
+56) Le constructeur en PHP moderne s’appelle :
+A) _construct()
+B) __construct()
+C) constructor()
+D) init()
+Réponse : B
+
+57) Le constructeur s’exécute :
+A) À la fermeture du script
+B) À l’instanciation de l’objet
+C) À chaque echo
+D) À la compilation SQL
+Réponse : B
+
+58) $this désigne :
+A) La classe parente
+B) L’objet courant
+C) La base de données
+D) Un paramètre GET
+Réponse : B
+
+59) public signifie :
+A) Accessible partout
+B) Accessible seulement dans la classe
+C) Accessible seulement dans les enfants
+D) Inaccessible
+Réponse : A
+
+60) private signifie :
+A) Accessible partout
+B) Accessible dans la classe uniquement
+C) Accessible dans les classes filles seulement
+D) Accessible via SQL
+Réponse : B
+
+61) protected signifie :
+A) Accessible dans la classe et ses filles
+B) Accessible publiquement
+C) Inaccessible partout
+D) Réservé aux interfaces
+Réponse : A
+
+62) Une méthode est :
+A) Une variable globale
+B) Un comportement/fonction de classe
+C) Un type HTML
+D) Une requête SQL
+Réponse : B
+
+63) Les propriétés d’une classe sont :
+A) Des balises
+B) Des attributs/variables de classe
+C) Des headers HTTP
+D) Des imports CSS
+Réponse : B
+
+64) L’héritage permet :
+A) Supprimer toute relation entre classes
+B) Réutiliser et étendre une classe existante
+C) Interdire la redéfinition
+D) Remplacer mysqli
+Réponse : B
+
+65) Le mot-clé d’héritage en PHP est :
+A) implements
+B) extends
+C) inherits
+D) parentof
+Réponse : B
+
+66) L’un des bénéfices de la POO est :
+A) Couplage fort obligatoire
+B) Code spaghetti
+C) Meilleure maintenabilité
+D) Absence de modularité
+Réponse : C
+
+67) Une classe peut contenir :
+A) Seulement des attributs
+B) Seulement des méthodes
+C) Attributs + méthodes
+D) SQL uniquement
+Réponse : C
+
+68) L’encapsulation concerne surtout :
+A) Le contrôle de l’accès aux données
+B) La compression de fichiers
+C) Les sockets réseau
+D) Les sessions HTTP
+Réponse : A
+
+69) Redéfinir une méthode d’une classe mère dans la classe fille correspond à :
+A) Surcharge réseau
+B) Redéfinition (override)
+C) Parsing HTML
+D) Hachage
+Réponse : B
+
+70) En POO PHP, on peut créer :
+A) Un seul objet par classe
+B) Plusieurs objets d’une même classe
+C) Aucun objet
+D) Seulement des objets statiques
+Réponse : B
+
+71) Une bonne visibilité pour un attribut interne sensible est souvent :
+A) public
+B) private
+C) visible
+D) global
+Réponse : B
+
+72) La modularité en POO aide à :
+A) Réduire la lisibilité
+B) Travailler en équipe plus efficacement
+C) Supprimer les tests
+D) Bloquer la réutilisation
+Réponse : B
+
+73) L’orienté objet est :
+A) Une approche de résolution et de structuration
+B) Un protocole réseau
+C) Un moteur SQL
+D) Une extension navigateur
+Réponse : A
+
+74) Le couplage faible est :
+A) Souhaitable en conception
+B) À éviter absolument
+C) Impossible en POO
+D) Un type de variable
+Réponse : A
+
+75) L’accès aux méthodes/propriétés d’un objet se fait avec :
+A) :: uniquement
+B) ->
+C) =>
+D) ~~
+Réponse : B
+
+Partie 4 — Accès BD MySQL avec PHP (Q76–Q100)
+
+76) La classe utilisée dans le cours pour MySQL est :
+A) PDOOnly
+B) mysqli
+C) mysql_legacy obligatoire
+D) dbconnect
+Réponse : B
+
+77) Création d’une connexion mysqli :
+A) mysqli_connect_only()
+B) new mysqli($serveur,$user,$pass,$bd)
+C) open_sql()
+D) new mysql()
+Réponse : B
+
+78) Une connexion ouverte doit être :
+A) Gardée jusqu’au redémarrage serveur
+B) Fermée en fin de traitement
+C) Supprimée avec unlink
+D) Convertie en tableau
+Réponse : B
+
+79) Méthode de fermeture mysqli :
+A) close() via objet connexion
+B) unlink()
+C) drop()
+D) stop()
+Réponse : A
+
+80) connect_errno indique :
+A) Le nombre de lignes
+B) Le code d’erreur de connexion
+C) Le port HTTP
+D) Le nom de la base
+Réponse : B
+
+81) Les opérations CRUD couvrent :
+A) SELECT seulement
+B) INSERT seulement
+C) SELECT, INSERT, UPDATE, DELETE
+D) CREATE TABLE uniquement
+Réponse : C
+
+82) Une requête de lecture est :
+A) UPDATE
+B) DELETE
+C) SELECT
+D) INSERT
+Réponse : C
+
+83) Une requête d’ajout est :
+A) INSERT
+B) SELECT
+C) REMOVE
+D) FETCH
+Réponse : A
+
+84) Une requête de modification est :
+A) CHANGE
+B) UPDATE
+C) ALTERROW
+D) EDIT
+Réponse : B
+
+85) Une requête de suppression est :
+A) ERASE
+B) DROP ROW
+C) DELETE
+D) REMOVE LINE
+Réponse : C
+
+86) Après SELECT, on lit les résultats via :
+A) fetch_row/fetch_assoc/fetch_object
+B) file_get_contents
+C) printf seulement
+D) $_SERVER
+Réponse : A
+
+87) fetch_row() retourne généralement :
+A) Un objet
+B) Un tableau indexé
+C) Un tableau associatif
+D) Une chaîne JSON
+Réponse : B
+
+88) fetch_assoc() retourne généralement :
+A) Un tableau associatif
+B) Un tableau indexé pur
+C) Un booléen uniquement
+D) Un flux binaire
+Réponse : A
+
+89) fetch_object() retourne généralement :
+A) Un objet représentant la ligne
+B) Une chaîne
+C) Un entier
+D) Un fichier temporaire
+Réponse : A
+
+90) Dans une page de suppression, l’ID est souvent envoyé par :
+A) GET forcé uniquement
+B) Formulaire POST
+C) FTP
+D) DNS
+Réponse : B
+
+91) Avant exécuter DELETE/UPDATE, il faut :
+A) Désactiver toute validation
+B) Vérifier/valider les données reçues
+C) Fermer la connexion d’abord
+D) Supprimer les formulaires
+Réponse : B
+
+92) Une boucle classique d’affichage des résultats SQL est :
+A) for(;;) sans condition
+B) while($row = ...)
+C) switch(row)
+D) do sans requête
+Réponse : B
+
+93) L’ordre standard côté BD est :
+A) Fermer → connecter → requête
+B) Connecter → requête → lire résultat → fermer
+C) Lire résultat → connecter
+D) Requête sans connexion
+Réponse : B
+
+94) Le formulaire HTML peut appeler un script PHP de suppression via :
+A) action="delete.php" method="post"
+B) href SQL direct
+C) css-delete: true
+D) onload=dropdb()
+Réponse : A
+
+95) En cas d’erreur de connexion, connect_errno vaut généralement :
+A) 0
+B) Une valeur non nulle
+C) -1 obligatoire
+D) NULL toujours
+Réponse : B
+
+96) En cas de connexion réussie, connect_errno vaut :
+A) 1
+B) 404
+C) 0
+D) true
+Réponse : C
+
+97) L’objet $connexion est utilisé pour :
+A) Exécuter des méthodes mysqli (query, close, etc.)
+B) Compiler du CSS
+C) Lire des fichiers .txt
+D) Lancer Apache
+Réponse : A
+
+98) La manipulation des formulaires en partie 4 sert surtout à :
+A) Alimenter les requêtes SQL CRUD
+B) Créer des classes PHP
+C) Gérer les cookies uniquement
+D) Remplacer MySQL
+Réponse : A
+
+99) Un script PHP de traitement BD doit éviter :
+A) Vérification des entrées
+B) Affichage des erreurs
+C) Exécuter SQL sans contrôle des données
+D) Fermeture de connexion
+Réponse : C
+
+100) Le but de la partie 4 est principalement :
+A) Faire du design CSS avancé
+B) Connecter PHP à MySQL et manipuler les données
+C) Créer des API Java
+D) Écrire du C
+Réponse : B
